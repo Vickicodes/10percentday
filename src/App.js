@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import WelcomeMessage from "./containers/WelcomeMessage";
+import Interests from "./containers/Interests";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <p>BBC IMAGE GOING HERE</p>
+      <WelcomeMessage
+        headingText="Heading"
+        paragraphText="I am a paragraph of the welcome message"
+      />
+      <Interests />
+    </>
   );
-}
+};
 
 export default App;
